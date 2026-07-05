@@ -1,0 +1,76 @@
+@use 'variables';
+
+.our-clients {
+    position: relative;
+
+
+    .ellipse-3 {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    .container {
+        text-align: center;
+        padding: 80px 20px;
+
+
+
+        .clients-p {
+            width: 100%;
+            max-width: 756px;
+
+            margin: auto;
+        }
+
+        .clients-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 29px;
+            max-width: 1131px;
+            width: 100%;
+            margin: 0px auto;
+            align-items: center;
+            justify-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+
+            img {
+                max-width: 100%;
+                height: auto;
+                object-fit: contain;
+            }
+        }
+    }
+}
+
+@media (max-width:992px) {
+    .our-clients {
+        .ellipse-3 {
+            display: none;
+        }
+
+        .container {
+            padding: 48px 16px;
+
+            .clients-h2 {
+                font-size: 2.25rem;
+            }
+
+            .clients-p {
+                font-size: 0.9375rem;
+                margin-bottom: 32px;
+            }
+
+            .clients-container {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 20px;
+            }
+        }
+    }
+}

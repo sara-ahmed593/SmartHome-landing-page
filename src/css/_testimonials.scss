@@ -1,0 +1,119 @@
+@use 'variables';
+
+.testimonials {
+    text-align: center;
+    padding: 80px 135px;
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+
+
+
+    .testimonials-p {
+        width: 100%;
+        max-width: 756px;
+
+        line-height: 1.8;
+        margin: 0 auto;
+
+
+    }
+
+    .testimonials-container {
+        margin-top: 80px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.2rem;
+
+
+
+
+        .testimonials-card {
+            display: flex;
+            flex-direction: column;
+            background-color: variables.$text-nav;
+            gap: 1.4rem;
+            padding: 55px;
+            border: 1px solid variables.$border-test;
+            border-radius: 8px;
+            text-align: left;
+            width: 100%;
+            max-width: 580px;
+
+            &:hover {
+                background-color: variables.$text-white ;
+                box-shadow: 0px 20px 50px 0px #3131310D;
+
+            }
+
+            .content {
+                font-size: 14px;
+                font-weight: 500;
+                color: variables.$p-test;
+                line-height: 2rem;
+                margin: 0;
+            }
+
+            .testimonials-client {
+                display: flex;
+                gap: 1rem;
+
+                .client-info {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: start;
+                    gap: 2px;
+
+                    .client-name {
+                        font-size: 1rem;
+                        font-weight: 600;
+                        margin: 0;
+                        color: variables.$test-name;
+
+                    }
+
+                    .client-role {
+                        font-size: 1rem;
+                        font-weight: 400;
+                        margin: 4px 0 0;
+                        color: variables.$text-small;
+                    }
+
+                }
+            }
+        }
+
+
+
+    }
+
+    .slider-nav {
+        text-align: center;
+        margin-top: 74px;
+
+    }
+}
+
+@media (max-width: 768px) {
+    .testimonials {
+        padding: 60px 30px;
+
+        .testimonials-p {
+            max-width: 390px;
+            margin: 0 auto;
+        }
+
+        .testimonials-container {
+            grid-template-columns: 1fr;
+            gap: 24px;
+        }
+
+        .testimonials-h2 {
+            font-size: 3rem;
+        }
+
+        .testimonials-card {
+            padding: 35px;
+        }
+    }
+}

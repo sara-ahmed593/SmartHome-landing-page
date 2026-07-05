@@ -1,0 +1,37 @@
+@use './variables';
+@use './navbar';
+@use './about';
+@use './clients';
+@use './testimonials';
+@use './faq';
+@use './subscribe';
+@use './download';
+@use './footer';
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    transition: 0.3s;
+}
+
+html {
+    scroll-behavior: smooth;
+
+}
+
+.title-h2 {
+    font-size: 5rem;
+    font-weight: 700;
+    color: variables.$text-about;
+    margin-bottom: 40px;
+}
+
+.text-p {
+    font-size: 18px;
+    font-weight: 400;
+    color: variables.$text-small;
+
+}

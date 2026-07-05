@@ -1,0 +1,96 @@
+@use './variables';
+
+.download-app {
+    padding: 60px 135px;
+
+
+    .download-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+
+        .download-content {
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            gap: 2rem;
+
+
+
+            .download-p {
+                font-weight: 400;
+                font-size: 18px;
+                color: variables.$text-small;
+                margin: 32px 0 45px;
+                max-width: 430px;
+            }
+
+
+            .download-buttons {
+                display: flex;
+                gap: 20px;
+
+                img {
+                    width: 200px;
+                    cursor: pointer;
+
+                }
+            }
+        }
+
+
+        .download-image {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                width: 100%;
+                max-width: 841px;
+
+            }
+        }
+
+    }
+}
+
+@media (max-width: 992px) {
+    .download-app {
+        padding: 60px 20px;
+
+
+        .download-container {
+            grid-template-columns: 1fr;
+
+            .download-image {
+                order: 1;
+                display: flex;
+                justify-content: center;
+
+                img {
+                    width: 100%;
+                    max-width: 480px;
+                }
+            }
+
+            .download-content {
+                order: 2;
+                align-items: center;
+                text-align: center;
+
+
+                .download-h2 {
+                    font-size: 46px;
+
+
+                }
+
+
+
+
+            }
+        }
+    }
+}
