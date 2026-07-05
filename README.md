@@ -90,5 +90,5 @@ A modern and responsive Smart Home landing page built with HTML, SCSS, and JavaS
 
 ## Screenshot
 
-![Project Screenshot](D:\Multi-Step-Form-main\Screenshot .png)
+![Project Screenshot](https://github.com/sara-ahmed593/SmartHome-landing-page/blob/527597383b6a0d7a282214874e3e543d538bf6e2/screenshot.png)
 
